@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,400,400i,500,600,700&display=swap');
+
+
+/*/////////////////////////////////////////////////////////////
+                      Back to top button
+///////////////////////////////////////////////////////////////*/
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background:#F57F18;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 80px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+/*/////////////////////////////////////////////////////////////
+                           Header
+///////////////////////////////////////////////////////////////*/
+
+#header {
+  /*padding: 30px 0;*/
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled {
+  background: #fff;
+  /*padding: 20px 0;*/
+  height: 100px;
+  transition: all 0.5s;
+  border-bottom: 2px solid #F57F18;
+}
+@media (max-width:769px) {
+	#header.header-scrolled {
+  background: #fff;
+  /*padding: 20px 0;*/
+  height: 70px;
+  transition: all 0.5s;
+  border-bottom: 2px solid #F57F18;
+}}
+
+#header .logo {
+  float: left;
+}
+
+#header .logo h1 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #fff;
+  padding-left: 10px;
+  border-left: 4px solid #18d26e;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+.logoP
+{float: left;
+	height: 50px;
+	padding: 15px 15px 15px 0px;
+	font-size: 18px;
+	line-height: 20px}
+@media only screen and (max-width:1024px) 
+{.logoP{float: left;
+	height: 50px;
+	padding: 15px 15px 15px 0px;
+	font-size: 18px;
+	line-height: 20px;
+	max-width:75%; height:auto;}}
+@media only screen and (max-width:768px) 
+{.logoP{float: left;
+	height: 50px;
+	padding: 15px 15px 15px 0px;
+	font-size: 18px;
+	line-height: 20px;
+  max-width:60%; height:auto;}
+}
+
+/*/////////////////////
+    Nav active state
+///////////////////////*/
+@media (max-width:768px) {
+  .IndexactNav {  
+        background: none !important; 
+    }
+   }
+.Index a {
+ color: #F57F18 !important;
+}
+
+.IndexactNav {
+ color: #ed7d00 !important;
+ background: url("../img/bg.jpg");
+ background-position: top center !important;
+ background-repeat: repeat-x !important;
+}
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 0px; /*30px*/
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+@media (max-width:769px) {
+	.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+}}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 35px 0px 10px 0px;
+  margin:0px 3px;
+  text-decoration: none;
+  display: inline-block;
+  color: #1A3864;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height:22px;
+}
+@media (max-width:1024px) {
+	.nav-menu a {
+  font-size: 12px;
+}}
+
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #ed7d00;
+	background:url("../img/bg.jpg");
+	background-position:top center;
+	background-repeat:repeat-x;
+}
+@media (max-width:769px) {
+	.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #ed7d00;
+	background:none;
+}}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 0px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #173669;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #fff;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-bottom:1px solid #F57F18;
+}
+
+.nav-menu ul li:hover > a {
+  color: #F57F18;
+  border-bottom:1px solid #F57F18;
+}
+
+
+.nav-menu ul ul {
+  margin: 0;
+}
+/*////////////////////////////////
+            Mob:Navbar
+/////////////////////////////////*/
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 28px 10px 20px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 500;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 5px 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #18d26e;
+  text-decoration: none;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 18px 18px 0 0;
+  color: #F57F18;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/*/////////////////////////////////////////////////////////////
+                           Header
+///////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:769px) 
+{
+  
+  .intro-section{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .intro-section .container-fluid{
+    padding-top: 15px !important;
+  }
+  .intro-section .container-fluid .row .mob-banner{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    min-width: 380px !important;
+    margin-left: 10px;
+  }
+}
+
+
+/*//////////////////////////////////////////////
+              Banner Change
+/////////////////////////////////////////////*/
+.mob-banner{
+  display: none;
+}
+.desk-banner{
+  display: block !important;
+}
+@media only screen and (max-width:769px) 
+{
+  .desk-banner{
+    display: none !important;
+  }
+  .mob-banner{
+    display: block !important;
+  }
+}
+
+
+/*//////////////////////////////////////////
+            Footer
+//////////////////////////////////////////*/
+
+/*-----------------FOOTER--------------------*/
+.footer{ 
+  background-image: url(../img/footerImg.jpg);
+   background-position:center top; 
+   background-repeat:no-repeat; 
+  background-color:#11294f;}
+
+  @media (max-width:769px) {
+    .footer{ background-image: url(../img/footerImgM.jpg); background-position:center top; background-repeat:no-repeat; 
+  background-color:#11294fbd;}}
+  
+  .footerOr{ background-color:#F57F18; padding:12px 0px 10px 0px; background-image:url(../images/shadow.png); background-position:center top; background-repeat:no-repeat;}
+  
+  .footerGr{ background-color:#D8D9D9; padding:7px 0px 5px 0px;}
+  
+  /*----------------*/
+  .borderL1{ border-left:1px solid #D8D9D9;}
+  
+  .borderL{ border-left:1px solid #D8D9D9;}
+  @media (max-width:769px) {.borderL{ border-left:0px solid #D8D9D9;}}
+  
+  .borderBY{ border-bottom:1px solid #FFCF30;}
+  .borderBYMo{ border-bottom:0px solid #FFCF30;}
+  @media (max-width:769px) {.borderBYMo{ border-bottom:1px solid #FFCF30;}}
+  .borderBBlue{ border-bottom:1px solid #173669;}
+  .borderBOrg{ border-bottom:1px solid #F57F18;}
+  .borderBOrg2{ border-bottom:2px solid #F57F18;}
+  
+  /*----------------*/
+  .footerText{font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:400;
+  font-size:14px;
+  color:#D8D9D9;
+  line-height:20px;}
+  
+  .footerLink {font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:400;
+  font-size:14px;
+  color:#D8D9D9;
+  text-decoration:none;
+  line-height:20px}
+  .footerLink a {font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:400;
+  font-size:14px;
+  color:#D8D9D9;
+  line-height:23px;
+  text-decoration:none;}
+  .footerLink a.hover {
+  color:#D8D9D9;
+  text-decoration:none;}
+  
+  .footerText2 {font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:500;
+  font-size:15px;
+  color:#fff;
+  text-decoration:none;
+  line-height:22px;}
+  
+  .copyright{font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:400;
+  font-style:italic;
+  font-size:12px;
+  color:#313130;
+  text-decoration:none;
+  line-height:18px;}
+  
+  .copyrightW{font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:400;
+  font-style:italic;
+  font-size:12px;
+  color:#fff;
+  text-decoration:none;
+  line-height:18px;}
+  
+  .ulliMar{margin-left:-15px; margin-bottom:-15px;}
+  @media (max-width:769px) {.ulliMar{margin-left:-20px; margin-bottom:-15px;}}
+  
+  .disFCo{ display:block;}
+  @media (max-width:769px) {.disFCo{ display:none !important;}}
+  
+  .disFIp{ display:none !important;}
+  @media (max-width:769px) {.disFIp{ display:block !important;}}
+  
+  
+  .disCo{ display:block;}
+  @media (max-width:640px) {.disCo{ display:none !important;}}
+  .disFMo{ display:none !important;}
+  @media (max-width:640px) {.disFMo{ display:block !important;}}
+  
+  .dis1024{ display:none !important;}
+  @media (max-width:1024px) {.dis1024{ display:block !important;}}
+  @media (max-width:769px) {.dis1024{ display:none !important;}}
+  
+  .disCoMo{ display:block !important;}
+  @media (max-width:1024px) {.disCoMo{ display:none !important;}}
+  @media (max-width:769px) {.disCoMo{ display:block !important;}}
+  
+  .actNav{color: #ed7d00 !important;
+    background:url(../images/bg.jpg) !important;
+    background-position:top center !important;
+    background-repeat:repeat-x !important;}
+  @media (max-width:769px) {.actNav{color: #ed7d00 !important;
+    background:none !important;}}
+    
+    
+  /*--------------google-maps--------------------*/
+   .google-maps {
+          position: relative;
+          padding-bottom: 75%;
+          height: 0;
+          overflow: hidden;
+      }
+      .google-maps iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+      }
+  
+  .bgGrey{ background-color:#F1F0F0; padding:20px 10px;}
+  
+  .borderOr2{ border-top:2px solid #F57F18;}
+  
+  /*-----------------------------------------*/
+  .line {
+      position: relative;
+  }
+  
+  .line span {
+      background-color: white;
+      padding-right: 10px;
+  }
+  
+  .line:after {
+      content:"";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.5em;
+      border-bottom: 2px solid #F57F18;
+      z-index: -1;
+  }
+  .textOr6{ font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight:500;
+  color:#F57F18;
+  line-height:24px;
+  font-size:22px;}
+  
+  .logoF{max-width:238px; min-width:238px; max-height:66px; min-height:66px;}
+  @media (max-width:1024px) {.logoF{max-width:200px; min-width:200px; max-height:55px; min-height:55px;}}
+  @media (max-width:769px) {.logoF{max-width:238px; min-width:238px; max-height:66px; min-height:66px;}}
+
+.blink {
+  animation: blinker 0.6s linear infinite;
+  color: #fff;
+   
+  }
+  @keyframes blinker {  
+  50% { opacity: 30; 
+color:#112a53;}
+  }
+      .footerres
+{
+padding-top:10px;
+font-size: 25px;
+
+color: #008DD2;
+text-align: center;
+letter-spacing: 0px;
+
+}
