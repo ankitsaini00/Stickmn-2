@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,400,400i,500,600,700&display=swap');
-
+/*//////////////////////////////////////////////
+              Body
+//////////////////////////////////////////////*/
+body{
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: 'Bai Jamjuree', sans-serif !important;
+  color: #173669;
+  font-weight: 500;
+}
 
 /*/////////////////////////////////////////////////////////////
                       Back to top button
@@ -447,9 +457,17 @@
 }
 
 
+/*/////////////////////////////////////////////////////////////
+                           Retail:Details
+///////////////////////////////////////////////////////////////*/
 
+.retail-table-border{
+  border-bottom: 1.5px solid #F57F18;
+}
 
-
+.retail-table-border-right{
+  border-right: 1.5px solid #F57F18;
+}
 /*//////////////////////////////////////////
             Footer
 //////////////////////////////////////////*/
